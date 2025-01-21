@@ -57,7 +57,7 @@ app.put("/items/:id", (req, res) => { // update an item by id
         return res.status(404).json({error: "Item not found"})
     }
     if (task) { // if name is provided 
-        item.name = name; // update the item name
+        item.task = task; // update the item name
     }
     res.json(item) // return the updated item as response
 })
